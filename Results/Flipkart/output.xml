@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.9.10 on win32)" generated="20220407 12:02:42.537" rpa="false" schemaversion="3">
+<suite id="s1" name="Flipkart App" source="C:\Users\user\PycharmProjects\Harman_Robot_Framework\Tests\Flipkart\FunctionalTestSuite\flipkart_app.robot">
+<test id="s1-t1" name="google test" line="7">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${web_url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220407 12:02:43.333" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" starttime="20220407 12:02:43.332" endtime="20220407 12:02:59.595"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220407 12:02:59.596" endtime="20220407 12:02:59.738"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:q</arg>
+<arg>${search_web}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 12:02:59.741" level="INFO">Typing text 'FlipKart' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20220407 12:02:59.740" endtime="20220407 12:02:59.966"/>
+</kw>
+<kw name="Submit Form" library="SeleniumLibrary">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20220407 12:02:59.967" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20220407 12:02:59.967" endtime="20220407 12:03:10.759"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:LC20lb</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220407 12:03:10.763" level="INFO">Clicking element 'class:LC20lb'.</msg>
+<status status="PASS" starttime="20220407 12:03:10.762" endtime="20220407 12:03:17.780"/>
+</kw>
+<doc>open google</doc>
+<tag>internet</tag>
+<status status="PASS" starttime="20220407 12:02:43.331" endtime="20220407 12:03:17.781"/>
+</test>
+<test id="s1-t2" name="Flipkart Search" line="16">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class:_2KpZ6l</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220407 12:03:17.783" level="INFO">Clicking button 'class:_2KpZ6l'.</msg>
+<status status="PASS" starttime="20220407 12:03:17.783" endtime="20220407 12:03:18.052"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:q</arg>
+<arg>Wrist watch</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 12:03:18.054" level="INFO">Typing text 'Wrist watch' into text field 'name:q'.</msg>
+<status status="PASS" starttime="20220407 12:03:18.053" endtime="20220407 12:03:18.355"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>class:L0Z3Pu</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220407 12:03:18.360" level="INFO">Clicking button 'class:L0Z3Pu'.</msg>
+<status status="PASS" starttime="20220407 12:03:18.359" endtime="20220407 12:03:18.545"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220407 12:03:23.548" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220407 12:03:18.546" endtime="20220407 12:03:23.548"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220407 12:03:23.549" endtime="20220407 12:03:26.912"/>
+</kw>
+<status status="PASS" starttime="20220407 12:03:17.782" endtime="20220407 12:03:26.913"/>
+</test>
+<status status="PASS" starttime="20220407 12:02:42.542" endtime="20220407 12:03:26.915"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">internet</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Flipkart App">Flipkart App</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
