@@ -53,6 +53,20 @@ Viewall Patient test
     click link  xpath=//html/body/nav/div/div/ul/li[4]/a
     sleep  5s
 
+Update Patient test
+    [Documentation]  Update Patient
+    [Tags]  admin
+    click link  xpath=//html/body/nav/div/div/ul/li[2]/a
+    sleep   1s
+    input text  name:mobnumber  123456789
+    sleep  1s
+    click button    xpath=//html/body/div/div/div/form[1]/table/tbody/tr[2]/td[2]/button
+    sleep   1s
+    input text  name:name   tharun prasath
+    sleep   1s
+    click button    xpath=//html/body/div/div/div/form[2]/table/tbody/tr[8]/td[2]/button
+    sleep  3s
+
 Delete Patient test
     [Documentation]  Delete Patient
     [Tags]  admin
